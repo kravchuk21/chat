@@ -1,11 +1,9 @@
 import type {NextPage} from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Image from "next/image";
+import {Header} from "../components/Header";
+import {Dialog} from "../components/Dialog";
 
-const myLoader=()=>{
-    return "https://st.depositphotos.com/1008939/3281/i/600/depositphotos_32817757-stock-photo-smiling-man.jpg";
-}
 
 const Home: NextPage = () => {
     return (
@@ -17,19 +15,13 @@ const Home: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <header className={styles.header}>
-                    <div className={styles.logo}>
-                        <Image
-                            loader={myLoader}
-                            src={"https://st.depositphotos.com/1008939/3281/i/600/depositphotos_32817757-stock-photo-smiling-man.jpg"}
-                            alt={"В"}
-                            width={45}
-                            height={45}/>
-                    </div>
-                    <h1 className={styles.title}>Чат</h1>
-                </header>
+                <Header/>
                 <input className={styles.search} type="text" placeholder="Найти пользователя..."/>
-                <div className={styles.dialogs}></div>
+                <div className={styles.dialogs}>
+                    <Dialog/>
+                    <Dialog/>
+                    <Dialog/>
+                </div>
             </main>
         </div>
     )
