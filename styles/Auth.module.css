@@ -1,0 +1,19 @@
+.auth {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.link {
+    color: var(--blue);
+    margin-left: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.input {
+    margin-bottom: 20px;
+}

@@ -9,7 +9,7 @@ const Dialog: NextPage = () => {
     return (
         <div className={styles.dialog}>
             <Head>
-                <title>Дмалог: Влад Кравчук</title>
+                <title>Диалог: Влад Кравчук</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
             <Header/>
